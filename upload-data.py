@@ -7,9 +7,9 @@ client = weaviate.Client("https://food-allergies.semi.network")
 
 if client.is_ready():
   
-  data_file = open('data.json')
-  data = json.load(data_file)
-  data_file.close()
+  with open('data.json', 'r') as f:
+    data = json.load(f)
+
 
   client.batch.configure(
     batch_size=100, 
@@ -19,7 +19,7 @@ if client.is_ready():
   )
 
   for allergy in data["FoodAllergies"]:
-    print("importing allergies ", allergy.get("allergy"))
+    print("importing allergies ", allergy.get("allergy", None))
 
     properties = {
       "name": allergy["name"],

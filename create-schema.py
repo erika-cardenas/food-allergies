@@ -23,7 +23,7 @@ class_obj = {
         },
         {
             "name": "allergy",
-            "dataType": ["string"],
+            "dataType": ["string[]"],
             "description": "Type of allergy",
         }
     ]
