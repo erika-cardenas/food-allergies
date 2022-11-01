@@ -3,8 +3,8 @@ client = weaviate.Client("https://food-allergies.semi.network/")
 
 where_filter = {
     "path": ["allergy"],
-    "operator": "IsNull",
-    "valueBoolean": True
+    "operator": "Equal",
+    "valueString": "Peanut"
 }
 
 query_result = (
