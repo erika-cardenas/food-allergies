@@ -19,11 +19,11 @@ if client.is_ready():
   )
 
   for allergy in data["FoodAllergies"]:
-    print("importing allergies ", allergy.get("allergy", None))
+    print("importing allergies ", allergy.get("allergy"))
 
     properties = {
       "name": allergy["name"],
-      "age": str(allergy["age"]),
+      "age": int(allergy["age"]),
       "allergy": allergy.get("allergy", None)
     }
 
