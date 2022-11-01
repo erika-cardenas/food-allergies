@@ -27,7 +27,7 @@
         {
             "name": "Emma",
             "age": "20",
-            "allergy": [null]
+            "allergy": null
         },
         {
             "name": "Henry",
