@@ -2,7 +2,7 @@ from os import name
 import weaviate
 import json
 
-client = weaviate.Client("https://food-allergies.semi.network")
+client = weaviate.Client("http://localhost:8080")
 
 
 if client.is_ready():
@@ -23,15 +23,12 @@ if client.is_ready():
 
     properties = {
       "name": allergy["name"],
-      "age": int(allergy["age"]),
       "allergy": allergy.get("allergy", None)
     }
 
     client.batch.add_data_object(properties, "FoodAllergies")
   
   client.batch.flush()
-
-
 
 else:
   print("The Weaviate cluster is not connected.")

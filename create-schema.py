@@ -1,11 +1,11 @@
 import weaviate
 import json
 
-client = weaviate.Client("https://food-allergies.semi.network")
+client = weaviate.Client("http://localhost:8080")
 
 class_obj = {
     "class": "FoodAllergies", 
-    "description": "Properties include people, their age, and potential allergy",
+    "description": "Properties include people and potential allergy",
     "invertedIndexConfig": {
     "IndexNullState": True,         
     "IndexPropertyLength": True
@@ -15,11 +15,6 @@ class_obj = {
             "name": "name",
             "dataType": ["string"],
             "description": "Name of people",
-        },
-        {
-            "name": "age",
-            "dataType": ["int"],
-            "description": "Age of the person",  
         },
         {
             "name": "allergy",

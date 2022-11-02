@@ -2,51 +2,41 @@
     "FoodAllergies": [
         {
             "name": "Bill",
-            "age": "40",
             "allergy": ["Peanuts"]
         },
         {
             "name": "Nancy",
-            "age": "30",
             "allergy": ["Soy"]
         },
         {
             "name": "Samantha",
-            "age": "15",
             "allergy": ["Dairy"]
         },
         {
             "name": "Oliver",
-            "age": "50",
             "allergy": ["Soy"]
         },
         {
-            "name": "Noah",
-            "age": "5"
+            "name": "Noah"
         },
         {
             "name": "Emma",
-            "age": "20",
             "allergy": null
         },
         {
             "name": "Henry",
-            "age": "20",
             "allergy": ["Shellfish"]
         },
         {
             "name": "George",
-            "age": "70",
             "allergy": ["Wheat", "Shellfish", "Dairy"]
         },
         {
             "name": "Victoria",
-            "age": "10",
             "allergy": ["Dairy", "Wheat"]
         },
         {
             "name": "Ava",
-            "age": "20",
             "allergy": ["Peanuts"]
         }
     ]
