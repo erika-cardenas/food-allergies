@@ -2,7 +2,8 @@ from os import name
 import weaviate
 import json
 
-client = weaviate.Client("http://localhost:8080")
+client = weaviate.Client("https://food-allergies.semi.network")
+
 
 
 if client.is_ready():

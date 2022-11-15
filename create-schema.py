@@ -1,7 +1,7 @@
 import weaviate
 import json
 
-client = weaviate.Client("http://localhost:8080")
+client = weaviate.Client("https://food-allergies.semi.network")
 
 class_obj = {
     "class": "FoodAllergies", 
@@ -35,4 +35,3 @@ schema = client.schema.get()
 
 # print the schema
 print(json.dumps(schema, indent=4))
-
